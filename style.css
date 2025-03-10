@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Borel&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,500;1,700;1,800;1,900&display=swap');
 
 :root{
     --color__font: #2f2c39;
@@ -14,32 +14,57 @@
     box-sizing: border-box;
 }
 body{
-    background-color: var(--btn__active);
+    height: 100%;
+    width: 100%;
+    background-image: url(assets/image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 .nav{
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     height: 80px;
     line-height: 80px;
     background-color: var(--back__color);
+    overflow: hidden;
 }
 .nav__title{
     font-family: "Borel", cursive;
     line-height: 95px;
-    margin: 0 150px;
+    margin-left: -50px;
 }
 .nav__links{
-    /* margin: 0 20px; */
-
+    margin: 0 20px;
+    
 }
 .nav__link {
     color: var(--color__font);
     text-decoration: none;
-    /* margin-left: 20px; */
+    margin-left: 20px;
+    font-weight: 600;
 }
 
 .nav__btn {
     color: var(--color__font);
     text-decoration: none;
-    margin: 0 20px;
+    margin: 0 15px;
+    font-weight: 600;
+}
+.nav__btn--active{
+    margin-right: 50px;
+    background-color: var(--btn__active);
+    color: var(--back__color);
+    padding: 14px ;
+    border-radius: 8px;
+}
+.nav__btn--color{
+    background-color: var(--search__btn);
+    color: var(--color__font);
+    padding: 14px 10px;
+    border-radius: 8px;
+}
+.container{
+
 }
