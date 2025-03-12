@@ -84,10 +84,15 @@ body{
     padding: 15px 20px;
     border-radius: 55px;
 }
+.header__link:hover{
+    background-color: var(--back__color);
+    color: var(--btn__active);
+}
 .header__link--active{
     color: var(--color__font);
     background-color: var(--back__color);
 }
+
 .section__title{
     color: var(--back__color);
     font-size: 60px;
